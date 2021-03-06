@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body bgcolor="#c0c0c0">
+<body>
 <header>
     <div>
-        <div>
+        <div class="header-top">
             <label>
                 <select data-placeholder="Choose a language">
                     <option value="EN">English</option>
@@ -19,7 +20,7 @@
                 <p>+1 (234) 567 89 00</p>
             </div>
         </div>
-        <div>
+        <div class="header-bottom">
             <nav>
                 <ul class="menu">
                     <li><a href="index.html#collection">Collection</a></li>
@@ -29,7 +30,9 @@
                 </ul>
             </nav>
             <div class="banner">
-                <img src="img/logo.svg" alt="logo" width="169" onclick="location.reload(true)">
+                <a href="index.html">
+                <img src="img/logo.svg" alt="logo" width="169">
+                </a>
             </div>
             <div>
                 <a href="https://www.facebook.com/">
@@ -69,7 +72,9 @@
 <footer>
     <div class="footer-background">
         <div class="footer-element">
-            <img src="img/logo.svg" alt="logo" width="169">
+            <a href="index.html">
+                <img src="img/logo.svg" alt="logo" width="169">
+            </a>
             <p>Workout offers fitness clothing and footwear for those who want to change their lives and bodies for
                 better.
             </p>
@@ -96,7 +101,7 @@
             </article>
         </div>
     </div>
-    <div>
+    <div class="footer-bottom">
         <p>© Created by</p>
         <p>All rights Reserved</p>
     </div>
