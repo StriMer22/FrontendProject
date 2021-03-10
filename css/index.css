@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -50,7 +49,80 @@ a{
 }
 
 .header-icon img{
-    border: 1px solid white;
+
+}
+
+.large-item{
+    background-image: url('/img/man-with-ball.jpg');
+}
+
+.large-item2{
+    background-image: url("/img/run-black-man.jpg");
+}
+
+.upper-text-content{
+    font-size: 22px;
+    font-family: 'Bebas Neue',cursive;
+    color: rgba(34,35,35,0.46);
+}
+
+.text-content{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue',cursive;
+    font-size: 66px;
+}
+
+.text-content2{
+    font-family: 'Bebas Neue',cursive;
+    font-size: 66px;
+    color: white;
+}
+
+.upper-text-content a{
+    color: black;
+}
+
+.brand-color{
+    color: #f40106;
+}
+
+.shop-button a{
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.shop-button a:hover {
+    background-color: #555;
+}
+
+.shop-button a:active {
+    background-color: black;
+}
+
+.shop-button2 a{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.shop-button2 a:hover {
+    background-color: #555;
+}
+
+.shop-button2 a:active {
+    background-color: black;
+}
+
+.image-prop{
+    background-image: url("/img/man-with-sneakers.svg");
+}
+
+.mid-seaseon-text{
+    font-family: "PT Sans", sans-serif;
+    font-size: 25px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .menu{
