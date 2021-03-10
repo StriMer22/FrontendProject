@@ -1,92 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-    background-color: gray;
+body {
+    background-color: #ffffff;
 }
 
-span{
+span {
     padding-right: 30px;
 }
 
-li{
-    padding-left: 40px;
-}
-
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-.header-top{
+.header-top {
     background-color: #d60307;
 }
 
 .header-bottom {
-    background: rgb(34,35,35);
-    background: linear-gradient(180deg, rgba(34,35,35,1) 11%, rgba(101,101,101,1) 100%);
+    background: rgb(34, 35, 35);
+    background: linear-gradient(180deg, rgba(34, 35, 35, 1) 11%, rgba(101, 101, 101, 1) 100%);
 }
 
-.header-language{
+.header-language {
     display: flex;
 }
 
-.header-contact{
+.header-contact {
     padding: 15px;
     display: flex;
     justify-content: space-between;
 
 }
 
-.header-text{
+.header-text {
     font-weight: bold;
     color: white;
     font-size: 14px;
-    font-family: 'PT Sans',sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.header-icon img{
+.header-icon img {
 
 }
 
-.large-item{
-    background-image: url('/img/man-with-ball.jpg');
+.large-item {
+    background-image: url('../img/man-with-ball.jpg');
+    padding: 345px 0;
 }
 
-.large-item2{
-    background-image: url("/img/run-black-man.jpg");
+.large-item2 {
+    background-image: url("../img/run-black-man.jpg");
+    padding: 345px 0;
 }
 
-.upper-text-content{
+.upper-text-content {
     font-size: 22px;
-    font-family: 'Bebas Neue',cursive;
-    color: rgba(34,35,35,0.46);
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(34, 35, 35, 0.46);
 }
 
-.text-content{
+.text-content {
     text-transform: uppercase;
-    font-family: 'Bebas Neue',cursive;
+    font-family: 'Bebas Neue', cursive;
     font-size: 66px;
 }
 
-.text-content2{
-    font-family: 'Bebas Neue',cursive;
+.text-content2 {
+    font-family: 'Bebas Neue', cursive;
     font-size: 66px;
     color: white;
 }
 
-.upper-text-content a{
+.upper-text-content a {
     color: black;
 }
 
-.brand-color{
+.brand-color {
     color: #f40106;
 }
 
-.shop-button a{
+.shop-button a {
     background-color: red;
     padding: 20px;
     text-align: center;
@@ -100,51 +99,279 @@ a{
     background-color: black;
 }
 
-.shop-button2 a{
+.large-item2 .shop-button a {
     background-color: white;
     padding: 20px;
     text-align: center;
 }
 
-.shop-button2 a:hover {
+.large-item2 .shop-button a:hover {
     background-color: #555;
 }
 
-.shop-button2 a:active {
+.large-item2 .shop-button a:active {
     background-color: black;
 }
 
-.image-prop{
+.image-prop {
     background-image: url("/img/man-with-sneakers.svg");
 }
 
-.mid-seaseon-text{
+.mid-seaseon-text {
     font-family: "PT Sans", sans-serif;
     font-size: 25px;
     vertical-align: middle;
     display: inline-block;
+    color: #717474;
 }
 
-.menu{
+.menu {
     display: flex;
     color: white;
-    font-size: 18px;
-    font-family: 'PT Sans',sans-serif;
+    font-family: 'PT Sans', sans-serif;
     list-style-type: none;
 }
 
-.header-bottom{
+
+.menu-nav {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.menu-nav:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.proposition{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.proposition .image-prop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proposition .image-prop2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proposition .image-prop3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-prop:first-child{
+    background-image: url("../img/man-with-sneakers.svg");
+    width: 570px;
+    height: 374px;
+    padding-left: 20px;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.image-prop2{
+    background-image: url("../img/sneakers.png");
+    width: 270px;
+    height: 374px;
+    padding-left: 20px;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.image-prop3{
+    background-image: url("../img/undershirt.png");
+    width: 270px;
+    height: 374px;
+    padding-left: 20px;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*.proposition .upper-text-content:hover{*/
+/*    border-bottom: 2px solid black;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+.secondary-color{
+    color: black;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+
+.large-item2 .upper-text-content{
+    color: rgba(255,255,255,0.62);
+}
+
+
+.mid-seaseon-sale{
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.mid-season-header .text-content{
+    text-align: center;
+
+}
+
+.item-img{
+    width: 250px;
+}
+
+.season-item{
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.season-item .menu-nav{
+    color: #717474;
+    font-family: "PT Sans",sans-serif;
+    font-size: 18px;
+}
+
+.season-item .menu-nav:hover{
+    border-bottom: 2px solid #b8baba;
+    padding: 0;
+    list-style-type: none;
+}
+
+.season-item .menu-price{
+    display: inline-flex;
+    padding: 20px;
+    color: #f40106;
+    font-size: 18px;
+}
+
+.add-to-cart{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    justify-content: center;
+}
+
+.add-to-cart a{
+    padding: 20px;
+    width: 100px;
+    height: 20px;
+}
+
+
+.season-item .add-to-cart{
+    display: inline-flex;
+    background-color: #222323;
+    font-size: 15px;
+    font-family: "PT Sans",sans-serif;
+    position: relative;
+}
+
+.season-item .add-to-cart:hover{
+    background: red;
+}
+
+.item-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.discount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.discount-img{
+    resize: both;
+    background-size: 30vw calc(30vw*756/1200);
+    height: calc(30vw*756/1200);
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.red-shirt{
+    background-image: url("../img/red-shirt.png");
+}
+
+.gray-jacket{
+    background-image: url("../img/gray-jacket.jpg");
+}
+
+.green-sneakers{
+    background-image: url("../img/green-sneakers.jpg");
+}
+
+.black-block h2{
+    padding-bottom: 5%;
+    font-size: 150%;
+    color: #ffffff;
+    font-family: "Bebas Neue",cursive;
+}
+
+/*.black-block h2:hover{*/
+/*    border-bottom: 2px solid #ffffff;*/
+/*}*/
+
+
+.black-block span div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.block-item{
+    font-family: "PT Sans",sans-serif;
+    font-size: 100%;
+}
+
+/*.black-block h2 span:hover{*/
+/*    border-bottom: 2px solid #ffffff;*/
+/*}*/
+
+.black-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    height: 35%;
+    top: 50%;
+    background:rgba(34, 35, 35, 0.89);
+    /*font-family: "Bebas Neue",;*/
+}
+
+.header-bottom {
     padding: 25px;
     display: flex;
     justify-content: space-between;
 
 }
 
-.footer-background{
-    background: rgb(34,35,35);
-    background: linear-gradient(0deg, rgba(34,35,35,1) 11%, rgba(101,101,101,1) 100%);
+.footer-background {
+    background: rgb(34, 35, 35);
+    background: linear-gradient(0deg, rgba(34, 35, 35, 1) 11%, rgba(101, 101, 101, 1) 100%);
 }
 
-.footer-bottom{
+.footer-bottom {
     background: #222323;
 }
