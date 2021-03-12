@@ -5,13 +5,21 @@
     --secondary-color: #d60307;
     --third-color: black;
     --fourth-color: #555;
+    --fifth-color: #222323;
     scroll-behavior: smooth;
 }
 
+main .entire-image{
+    padding: 50px;
+}
 
 * {
     padding: 0;
     margin: 0;
+}
+
+img {
+    max-width: 300px;
 }
 
 body {
@@ -62,11 +70,6 @@ header .menu-nav a {
 
 header .menu-nav {
     list-style-type: none;
-    /*margin-left: 50px;*/
-}
-
-header .header-icon {
-    /*margin-left: 400px;*/
 }
 
 .icon {
@@ -105,30 +108,96 @@ header .header-icon {
     font-family: 'PT Sans', sans-serif;
 }
 
-@media (max-width: 980px) {
-    /*header nav {*/
-    /*    display: flex;*/
-    /*}*/
-    /*header .burger-icon {*/
-    /*    display: none;*/
-    /*}*/
-    /*header .menu {*/
-    /*    display: flex;*/
-    /*    justify-content: space-around;*/
-    /*    flex: 1;*/
-    /*    align-items: center;*/
-    /*}*/
 
 
-    .logo-responsive {
-        display: block;
-        max-width: 100%;
-    }
+/*body*/
+.large-item {
+    background-image: url('../img/man-with-ball.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
 
-    .header-bottom {
-        padding-right: 600px;
-    }
+.big-picture .large-item{
+    background-image: url('../img/run-black-man.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
 
+.big-picture .shop-button{
+    background: var(--main-color);
+    color: var(--third-color);
+    font-weight: 700;
+    font-family: "PT Sans",sans-serif;
+}
+
+.big-picture .shop-button span{
+    text-decoration: none;
+}
+
+.big-picture .shop-button:hover{
+    color: var(--main-color);
+}
+
+.entire-image {
+    margin: 0 auto;
+    max-width: 1920px;
+    padding: 0 25px 0 25px;
+}
+
+.text-on-large-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.shop-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 16px;
+    width: 160px;
+    height: 60px;
+    background-color: var(--secondary-color);
+}
+
+.shop-button:hover {
+    background-color: var(--fifth-color);
+}
+
+.upper-text-content {
+    font-size: 3vw;
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(34, 35, 35, 0.46);
+}
+
+.text-content {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10vw;
+    line-height: 1.0;
+    margin-bottom: 50px;
+}
+
+.header-bottom {
+    height: 6vh;
+}
+
+.big-picture .upper-text-content{
+    color: rgba(255,255,255,0.62);
+}
+
+.big-picture .text-content{
+    color: var(--main-color);
+}
+
+.big-picture
+
+@media screen and (max-width: 980px) {
     .header-contact {
         display: none;
     }
@@ -140,29 +209,69 @@ header .header-icon {
     header .header-icon {
         display: none;
     }
+
+    .large-item {
+        padding: 100px 0;
+    }
+
+    .big-picture .large-item{
+        padding: 100px 0;
+    }
+
+    .text-content {
+        font-size: 8vh;
+    }
+
+    .big-picture .text-content{
+        font-size: 8vh;
+    }
+
+    .upper-text-content {
+        font-size: 3vh;
+    }
+
+    .big-picture .upper-text-content{
+        font-size: 3vh;
+    }
+    .proposition {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-/*body*/
-.large-item {
-    background-image: url('../img/man-with-ball.jpg');
-    padding: 345px 0;
+@media screen and (max-width: 800px) {
+    .text-content {
+        font-size: 6vh;
+    }
+    .upper-text-content {
+        font-size: 2vh;
+    }
+    .big-picture .text-content{
+        font-size: 6vh;
+    }
+    .big-picture .upper-text-content{
+        font-size: 2vh;
+    }
 }
 
-.large-item2 {
-    background-image: url("../img/run-black-man.jpg");
-    padding: 345px 0;
+@media screen and (max-width: 640px) {
+    .large-item {
+        padding: 75px 0;
+    }
+
+    .big-picture .large-item{
+        padding: 75px 0;
+    }
 }
 
-.upper-text-content {
-    font-size: 22px;
-    font-family: 'Bebas Neue', cursive;
-    color: rgba(34, 35, 35, 0.46);
+@media screen and (max-width: 480px) {
+
 }
 
-.text-content {
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 66px;
+@media screen and (max-width: 320px) {
+
 }
 
 .text-content2 {
@@ -176,24 +285,10 @@ header .header-icon {
 }
 
 .brand-color {
-    color: #f40106;
+    color: var(--secondary-color);
 }
 
-.shop-button a {
-    background-color: red;
-    padding: 20px;
-    text-align: center;
-}
-
-.shop-button a:hover {
-    background-color: #555;
-}
-
-.shop-button a:active {
-    background-color: black;
-}
-
-.large-item2 .shop-button a {
+.large-item2 .shop-button{
     background-color: white;
     padding: 20px;
     text-align: center;
@@ -207,10 +302,6 @@ header .header-icon {
     background-color: black;
 }
 
-.image-prop {
-    background-image: url("/img/man-with-sneakers.svg");
-}
-
 .mid-season-text {
     font-family: "PT Sans", sans-serif;
     font-size: 25px;
@@ -220,59 +311,67 @@ header .header-icon {
 }
 
 .proposition {
-    padding-top: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-
+    align-items: center;
+    justify-content: space-between;
 }
 
-.proposition .image-prop {
+.proposition .text-content{
+    font-size: 6vh;
+    margin-bottom: 4vh;
+    padding-left: 1vh;
+}
+
+.proposition .upper-text-content{
+    font-size: 2vh;
+    padding: 4vh 1vh 5vh;
+}
+
+.proposition .upper-text-content a{
+    text-decoration: none;
+}
+
+.proposition .upper-text-content a:hover{
+    text-decoration: underline;
+}
+
+.image-prop {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 22.5%;
+    height: 374px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 120px;
 }
 
-.proposition .image-prop2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.red-line{
+    width: 8vw;
+    height: 1%;
+    background: var(--secondary-color);
+    margin-left: 1vh;
 }
 
-.proposition .image-prop3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.image-prop:first-child {
+.image-prop:first-child{
     background-image: url("../img/man-with-sneakers.svg");
-    width: 570px;
-    height: 374px;
-    padding-left: 20px;
-    padding-top: 100px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    width: 47.5%;
 }
 
-.image-prop2 {
+.image-prop:nth-child(2) {
     background-image: url("../img/sneakers.png");
-    width: 270px;
-    height: 374px;
-    padding-left: 20px;
-    padding-top: 100px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
-.image-prop3 {
+.image-prop:last-child{
     background-image: url("../img/undershirt.png");
-    width: 270px;
-    height: 374px;
-    padding-left: 20px;
-    padding-top: 100px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .secondary-color {
