@@ -496,11 +496,20 @@ header .menu-nav {
     }
 
     .proposition {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
     }
+    .image-prop{
+        width: 85%;
+        margin-bottom: 30px;
+    }
+
+    .image-prop:first-child{
+        width: 85%;
+    }
+    .image-prop:last-child{
+        margin-bottom: 0;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
