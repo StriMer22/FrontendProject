@@ -9,7 +9,7 @@
     scroll-behavior: smooth;
 }
 
-main .entire-image{
+main .entire-image {
     padding: 50px;
 }
 
@@ -109,7 +109,6 @@ header .menu-nav {
 }
 
 
-
 /*body*/
 .large-item {
     background-image: url('../img/man-with-ball.jpg');
@@ -118,25 +117,25 @@ header .menu-nav {
     padding: 200px 0;
 }
 
-.big-picture .large-item{
+.big-picture .large-item {
     background-image: url('../img/run-black-man.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 200px 0;
 }
 
-.big-picture .shop-button{
+.big-picture .shop-button {
     background: var(--main-color);
     color: var(--third-color);
     font-weight: 700;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", sans-serif;
 }
 
-.big-picture .shop-button span{
+.big-picture .shop-button span {
     text-decoration: none;
 }
 
-.big-picture .shop-button:hover{
+.big-picture .shop-button:hover {
     color: var(--main-color);
 }
 
@@ -187,93 +186,15 @@ header .menu-nav {
     height: 6vh;
 }
 
-.big-picture .upper-text-content{
-    color: rgba(255,255,255,0.62);
+.big-picture .upper-text-content {
+    color: rgba(255, 255, 255, 0.62);
 }
 
-.big-picture .text-content{
+.big-picture .text-content {
     color: var(--main-color);
 }
 
 .big-picture
-
-@media screen and (max-width: 980px) {
-    .header-contact {
-        display: none;
-    }
-
-    header .menu {
-        display: none;
-    }
-
-    header .header-icon {
-        display: none;
-    }
-
-    .large-item {
-        padding: 100px 0;
-    }
-
-    .big-picture .large-item{
-        padding: 100px 0;
-    }
-
-    .text-content {
-        font-size: 8vh;
-    }
-
-    .big-picture .text-content{
-        font-size: 8vh;
-    }
-
-    .upper-text-content {
-        font-size: 3vh;
-    }
-
-    .big-picture .upper-text-content{
-        font-size: 3vh;
-    }
-    .proposition {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .text-content {
-        font-size: 6vh;
-    }
-    .upper-text-content {
-        font-size: 2vh;
-    }
-    .big-picture .text-content{
-        font-size: 6vh;
-    }
-    .big-picture .upper-text-content{
-        font-size: 2vh;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .large-item {
-        padding: 75px 0;
-    }
-
-    .big-picture .large-item{
-        padding: 75px 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-}
-
-@media screen and (max-width: 320px) {
-
-}
-
 .text-content2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 66px;
@@ -288,7 +209,7 @@ header .menu-nav {
     color: var(--secondary-color);
 }
 
-.large-item2 .shop-button{
+.large-item2 .shop-button {
     background-color: white;
     padding: 20px;
     text-align: center;
@@ -317,22 +238,22 @@ header .menu-nav {
     justify-content: space-between;
 }
 
-.proposition .text-content{
+.proposition .text-content {
     font-size: 6vh;
     margin-bottom: 4vh;
     padding-left: 1vh;
 }
 
-.proposition .upper-text-content{
+.proposition .upper-text-content {
     font-size: 2vh;
     padding: 4vh 1vh 5vh;
 }
 
-.proposition .upper-text-content a{
+.proposition .upper-text-content a {
     text-decoration: none;
 }
 
-.proposition .upper-text-content a:hover{
+.proposition .upper-text-content a:hover {
     text-decoration: underline;
 }
 
@@ -348,14 +269,14 @@ header .menu-nav {
     padding-top: 120px;
 }
 
-.red-line{
+.red-line {
     width: 8vw;
     height: 1%;
     background: var(--secondary-color);
     margin-left: 1vh;
 }
 
-.image-prop:first-child{
+.image-prop:first-child {
     background-image: url("../img/man-with-sneakers.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -368,7 +289,7 @@ header .menu-nav {
     background-size: cover;
 }
 
-.image-prop:last-child{
+.image-prop:last-child {
     background-image: url("../img/undershirt.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -535,4 +456,85 @@ header .menu-nav {
 
 .footer-bottom {
     background: #222323;
+}
+
+@media screen and (max-width: 980px) {
+    .header-contact {
+        display: none;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .header-icon {
+        display: none;
+    }
+
+    .large-item {
+        padding: 100px 0;
+    }
+
+    .big-picture .large-item {
+        padding: 100px 0;
+    }
+
+    .text-content {
+        font-size: 8vh;
+    }
+
+    .big-picture .text-content {
+        font-size: 8vh;
+    }
+
+    .upper-text-content {
+        font-size: 3vh;
+    }
+
+    .big-picture .upper-text-content {
+        font-size: 3vh;
+    }
+
+    .proposition {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-content {
+        font-size: 6vh;
+    }
+
+    .upper-text-content {
+        font-size: 2vh;
+    }
+
+    .big-picture .text-content {
+        font-size: 6vh;
+    }
+
+    .big-picture .upper-text-content {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .large-item {
+        padding: 75px 0;
+    }
+
+    .big-picture .large-item {
+        padding: 75px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
 }
