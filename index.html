@@ -7,72 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/basket.css">
 </head>
 
 <body>
 <header>
-    <div class="header-top">
-        <div class="container">
-            <div class="header-contact">
-                <label>
-                    <select data-placeholder="Choose a language">
-                        <option value="EN">English</option>
-                        <option value="PL">Polish</option>
-                    </select>
-                </label>
-                <div class="contact-tag">
-                    <span class="header-text">homen932@gmail.com</span>
-                    <span class="header-text">+1 (234) 567 89 00</span>
+    <div class="head">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <label>
+                        <select data-placeholder="Choose a language">
+                            <option value="EN">English</option>
+                            <option value="PL">Polish</option>
+                        </select>
+                    </label>
+                    <div class="contact-tag">
+                        <span class="header-text">homen932@gmail.com</span>
+                        <span class="header-text">+1 (234) 567 89 00</span>
+                    </div>
                 </div>
             </div>
-            <div class="h-bottom">
-                <div class="header-bottom">
-                    <div class="logo-nav">
-                        <div class="banner">
-                            <a href="index.html">
-                                <img src="img/logo.svg" alt="logo" class="logo-responsive">
-                            </a>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo.svg" alt="Companies logo" class="logo-responsive">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbar-menu" id="navbar">
+                            <div class="navbar-nav">
+                                <a class="menu-nav" href="#collection">Collection</a>
+                                <a class="menu-nav" href="#hot-collection">Sale</a>
+                                <a class="menu-nav" href="#about-us">About us</a>
+                                <a class="menu-nav" href="#contact-us">Contact us</a>
+                            </div>
                         </div>
-                        <nav>
-                            <ul class="menu">
-                                <li class="menu-nav"><a href="#collection">Collection</a></li>
-                                <li class="menu-nav"><a href="#mid-season-sale">Sale</a></li>
-                                <li class="menu-nav"><a href="#about-us">About us</a></li>
-                                <li class="menu-nav"><a href="#contact-us">Contact us</a></li>
-                            </ul>
-                        </nav>
+                        <div class="social-media">
+                            <div class="social-media-wrapper">
+                                <div class="icon"><a href="https://www.facebook.com/" target="_blank"><img
+                                        src="img/facebook.svg" alt="facebook" width="28px"></a>
+                                </div>
+                                <div class="icon"><a href="https://www.youtube.com/" target="_blank"><img
+                                        src="img/youtube.svg" alt="youtube" width="28px"></a></div>
+                                <div class="icon"><a href="https://www.instagram.com/" target="_blank"><img
+                                        src="img/instagram.svg" alt="instagram" width="28px"></a></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="header-icon">
-                        <div class="icon">
-                            <a href="https://www.facebook.com/">
-                                <img src="img/facebook.svg" alt="facebook" width="28">
-                            </a>
-                        </div>
-                        <div class="icon">
-                            <a href="https://www.instagram.com/">
-                                <img src="img/instagram.svg" alt="instagram" width="28">
-                            </a>
-                        </div>
-                        <div class="icon">
-                            <a href="https://www.youtube.com/">
-                                <img src="img/youtube.svg" alt="youtube" width="28">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
 </header>
 <main>
     <div id="easynetshop-cart">
-        <div id="enscart_my_wrapper">
-            <div id="enscart_myimage_wrapper">
+        <div id="enscart_wrapper">
+            <div id="enscart_image_wrapper">
                 <img src="img/shop-icon.png" alt="shop icon">
             </div>
-            <div id="enscart_my_counter_wrapper"><span id="easynetshop-cart-count"> 0 </span></div>
+            <div id="enscart_counter_wrapper"><span id="easynetshop-cart-count"> 0 </span></div>
         </div>
     </div>
     <div class="first-big-picture">
@@ -108,35 +116,14 @@
             </div>
         </div>
     </div>
-    <!--        carousel items-->
     <div class="carousel-brands">
         <div class="container">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/addidas.svg" class="d-block w-50" alt="...">
-                        <img src="img/acics.svg" class="d-block w-50" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/new-balance.svg" class="d-block w-50" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/nike.svg" class="d-block w-50" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/reebok.svg" class="d-block w-50" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="img/addidas.svg" class="d-block w-100" alt="adidas logo"></div>
+                <div class="item"><img src="img/acics.svg" class="d-block w-100" alt="asics logo"></div>
+                <div class="item"><img src="img/new-balance.svg" class="d-block w-100" alt="new balance logo"></div>
+                <div class="item"><img src="img/nike.svg" class="d-block w-100" alt="nike logo"></div>
+                <div class="item"><img src="img/reebok.svg" class="d-block w-100" alt="reebok"></div>
             </div>
         </div>
     </div>
@@ -147,13 +134,13 @@
                     <span class="upper-text-content">SALE OF THE MONTH</span><br>
                     <span class="text-content">Get Your <span class="discount-span">Discount<span
                             class="brand-color">.</span></span></span>
-                    <a href="#collection" class="shop-button">Shop Now →</a>
+                    <a href="#hot-collection" class="shop-button">Shop Now →</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="container space">
-        <div class="mid-season-sale">
+        <div class="mid-season-sale" id="hot-collection">
             <span class="tittle-text-content">mid-season Sale<span class="brand-color">.</span></span>
             <div class="line"></div>
             <span class="under-tittle-text">Shop clothes and trainers that are chosen by thousands of our clients.
@@ -209,7 +196,7 @@
             <div class="black-block">
                 <div class="block-item">
                     <h2>20% OFF ALL T-shirts</h2>
-                    <a href="#mid-season-sale"> Shop Collection →</a>
+                    <a href="#hot-collection"> Shop Collection →</a>
                 </div>
             </div>
         </article>
@@ -232,43 +219,64 @@
     </div>
     <div class="container space">
         <div class="mid-season-sale">
-            <span class="tittle-text-content">main COLLECTION<span class="brand-color">.</span></span>
+            <span class="tittle-text-content" id="collection">main COLLECTION<span class="brand-color">.</span></span>
             <div class="line"></div>
             <span class="under-tittle-text">Shop our main fitness collection for men and women represented by the famous brands.
                 </span>
         </div>
         <!--            Scroll tab-->
-        <div>
-            <div class="select-type">
-                <h3>Women</h3>
-                <h3>Men</h3>
-                <h3>Shoes</h3>
+        <!--        <div>-->
+        <!--            <div class="select-type">-->
+        <!--                <h3>Women</h3>-->
+        <!--                <h3>Men</h3>-->
+        <!--                <h3>Shoes</h3>-->
+        <!--            </div>-->
+        <!--            <article class="main-item">-->
+        <!--                <a href="item-page.html">-->
+        <!--                    <img src="img/main-collection-one.jfif" alt="black female in undershirt" width="250">-->
+        <!--                    <span class="menu-nav">Puma Sports Bra</span>-->
+        <!--                </a>-->
+        <!--                <span class="menu-price">$12,00USD</span>-->
+        <!--                <span class="add-to-cart"><a href="#"> Add to cart</a></span>-->
+        <!--            </article>-->
+        <!--            <article class="main-item">-->
+        <!--                <a href="item-page.html">-->
+        <!--                    <img src="img/main-collection-two.jfif" alt="Reebok Long Sleeve Top" width="250">-->
+        <!--                    <span class="menu-nav">Reebok Long Sleeve Top</span>-->
+        <!--                </a>-->
+        <!--                <span class="menu-price">$18,00USD</span>-->
+        <!--                <span class="add-to-cart"><a href="#"> Add to cart</a></span>-->
+        <!--            </article>-->
+        <!--            <article class="main-item">-->
+        <!--                <a href="item-page.html">-->
+        <!--                    <img src="img/main-collection-three.jfif" alt="Quicksilver Workout Top" width="250">-->
+        <!--                    <span class="menu-nav">Quicksilver Workout Top</span>-->
+        <!--                </a>-->
+        <!--                <span class="menu-price">$12,00USD</span>-->
+        <!--                <span class="add-to-cart"><a href="#"> Add to cart</a></span>-->
+        <!--            </article>-->
+        <!--            &lt;!&ndash;               Need to add shoes and male collections&ndash;&gt;-->
+        <!--        </div>-->
+        <div class="mid-season-sale">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                       aria-controls="home" aria-selected="true">Women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                       aria-controls="profile" aria-selected="false">Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                       aria-controls="contact" aria-selected="false">Shoes</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
             </div>
-            <article class="main-item">
-                <a href="item-page.html">
-                    <img src="img/main-collection-one.jfif" alt="black female in undershirt" width="250">
-                    <span class="menu-nav">Puma Sports Bra</span>
-                </a>
-                <span class="menu-price">$12,00USD</span>
-                <span class="add-to-cart"><a href="#"> Add to cart</a></span>
-            </article>
-            <article class="main-item">
-                <a href="item-page.html">
-                    <img src="img/main-collection-two.jfif" alt="Reebok Long Sleeve Top" width="250">
-                    <span class="menu-nav">Reebok Long Sleeve Top</span>
-                </a>
-                <span class="menu-price">$18,00USD</span>
-                <span class="add-to-cart"><a href="#"> Add to cart</a></span>
-            </article>
-            <article class="main-item">
-                <a href="item-page.html">
-                    <img src="img/main-collection-three.jfif" alt="Quicksilver Workout Top" width="250">
-                    <span class="menu-nav">Quicksilver Workout Top</span>
-                </a>
-                <span class="menu-price">$12,00USD</span>
-                <span class="add-to-cart"><a href="#"> Add to cart</a></span>
-            </article>
-            <!--               Need to add shoes and male collections-->
         </div>
     </div>
     <div class="image-with-text">
@@ -404,7 +412,7 @@
             </article>
             <article>
                 <h2>Shop</h2>
-                <p><a href="#mid-season-sale">Mid season sale</a></p>
+                <p><a href="#hot-collection">Mid season sale</a></p>
                 <p><a href="#new-arrivals">New arrivals</a></p>
                 <p><a href="#collection">Main collection</a></p>
             </article>
@@ -422,9 +430,32 @@
         <p>All rights Reserved</p>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 3,
+        },
+        1000: {
+            items: 4,
+            loop: false
+        }
+    }
+})</script>
 </body>
 
 </html>

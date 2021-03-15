@@ -1,4 +1,4 @@
-#enscart_my_wrapper {
+#enscart_wrapper {
     text-align: center;
     position: fixed;
     top: 80px;
@@ -6,7 +6,7 @@
     z-index: 1140;
 }
 
-#enscart_myimage_wrapper {
+#enscart_image_wrapper {
     background: #ffffff;
     border-radius: 30px;
     width: 60px;
@@ -20,13 +20,13 @@
     z-index: 1140;
 }
 
-#enscart_my_wrapper img {
+#enscart_wrapper img {
     height: 80%;
     width: auto;
     padding-top: 8px;
 }
 
-#enscart_my_counter_wrapper {
+#enscart_counter_wrapper {
     cursor: pointer;
     min-width: 10px;
     height: 30px;
