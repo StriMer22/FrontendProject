@@ -90,6 +90,10 @@ header .menu {
     padding-top: 17px;
 }
 
+.social-media-icon{
+    width: 28px;
+}
+
 header .menu-nav{
     color: var(--main-color);
     font-family: "PT Sans", sans-serif;
@@ -108,6 +112,9 @@ header .menu-nav{
     width: 90px;
 }
 
+.sale-of-month-wrapper .line{
+    height: 5px;
+}
 
 .icon {
     display: inline-block;
@@ -488,6 +495,83 @@ header .menu-nav{
     background: rgba(34, 35, 35, 0.89);
 }
 
+.sale-of-month{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sale-of-month-bg{
+    background-image: url("../img/deal-month-image.jfif");
+    background-size: cover;
+}
+
+.about-us{
+    background-image: url("../img/about-us.jfif");
+    background-size: cover;
+}
+
+.sale-of-month-content{
+    background-color: var(--fifth-color);
+    padding: 110px 30px 120px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale-of-month-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 570px;
+    flex: 1;
+    height: 600px;
+}
+
+.text-sale-of-month{
+    font-size: 124px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 10px;
+}
+
+.text-lower-sale-of-month{
+    font-size: 16px;
+    font-family: "PT Sans",sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--main-color);
+}
+.sale-of-month-wrapper .brand-color{
+    font-size: 42px;
+    font-family: "PT Sans",sans-serif;
+}
+.lowest-price{
+    font-family: "PT Sans",sans-serif;
+    font-size: 23px;
+    color: var(--main-color);
+}
+.sale-of-month-wrapper p{
+    font-family: "PT Sans",sans-serif;
+    font-size: 20px;
+    color: var(--main-color);
+}
+.sale-of-month-wrapper a{
+    font-family: "PT Sans",sans-serif;
+    font-size: 15px;
+    color: var(--main-color);
+}
+
+.sale-of-month-wrapper a:hover{
+    text-decoration: underline;
+}
+
+.about-us-text{
+    font-size: 52px;
+    color: #ffffff;
+    font-family: "Bebas Neue", cursive;
+}
 .footer-background {
     background: rgb(34, 35, 35);
     background: linear-gradient(0deg, rgba(34, 35, 35, 1) 11%, rgba(101, 101, 101, 1) 100%);
@@ -614,6 +698,20 @@ header .menu-nav{
         display: none;
     }
 
+    .sale-of-month{
+        grid-template-columns: 1fr;
+    }
+
+    .about-us{
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    }
+
+    .sale-of-month-content{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -641,6 +739,9 @@ header .menu-nav{
         font-size: 18px;
         padding-bottom: 0;
     }
+    .text-sale-of-month{
+        font-size: 90px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -655,6 +756,16 @@ header .menu-nav{
     .big-picture .text-content .discount-span {
         display: block;
     }
+
+    .sale-of-month-content{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .text-sale-of-month{
+        font-size: 78px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -667,9 +778,25 @@ header .menu-nav{
         padding-bottom: 0;
     }
 
+    .sale-of-month-wrapper{
+        height: 600px;
+    }
+
+    .sale-of-month-wrapper p{
+        font-size: 18px;
+    }
+
+    .sale-of-month-wrapper h2{
+        font-size: 38px;
+    }
+
+    .text-sale-of-month{
+        font-size: 70px;
+    }
+
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 325px) {
     .black-block {
         top: 30%;
     }
@@ -678,5 +805,27 @@ header .menu-nav{
         margin-bottom: 2px;
     }
 
+    .sale-of-month-wrapper p{
+        font-size: 16px;
+    }
+
+    .sale-of-month-wrapper h2{
+        font-size: 36px;
+    }
+
+    .text-sale-of-month{
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width: 280px){
+    .sale-of-month-wrapper p{
+        font-size: 15px;
+    }
+
+    .sale-of-month-wrapper h2{
+        font-size: 32px;
+    }
 }
 

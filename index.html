@@ -60,12 +60,12 @@
                         <div class="social-media">
                             <div class="social-media-wrapper">
                                 <div class="icon"><a href="https://www.facebook.com/" target="_blank"><img
-                                        src="img/facebook.svg" alt="facebook" width="28px"></a>
+                                        src="img/facebook.svg" alt="facebook" class="social-media-icon"></a>
                                 </div>
                                 <div class="icon"><a href="https://www.youtube.com/" target="_blank"><img
-                                        src="img/youtube.svg" alt="youtube" width="28px"></a></div>
+                                        src="img/youtube.svg" alt="youtube" class="social-media-icon"></a></div>
                                 <div class="icon"><a href="https://www.instagram.com/" target="_blank"><img
-                                        src="img/instagram.svg" alt="instagram" width="28px"></a></div>
+                                        src="img/instagram.svg" alt="instagram" class="social-media-icon"></a></div>
                             </div>
                         </div>
                     </div>
@@ -225,43 +225,35 @@
                 </span>
         </div>
         <!--            Scroll tab-->
-        <!--        <div>-->
-        <!--            <div class="select-type">-->
-        <!--                <h3>Women</h3>-->
-        <!--                <h3>Men</h3>-->
-        <!--                <h3>Shoes</h3>-->
-        <!--            </div>-->
-        <!--            <article class="main-item">-->
-        <!--                <a href="item-page.html">-->
-        <!--                    <img src="img/main-collection-one.jfif" alt="black female in undershirt" width="250">-->
-        <!--                    <span class="menu-nav">Puma Sports Bra</span>-->
-        <!--                </a>-->
-        <!--                <span class="menu-price">$12,00USD</span>-->
-        <!--                <span class="add-to-cart"><a href="#"> Add to cart</a></span>-->
-        <!--            </article>-->
-        <!--            <article class="main-item">-->
-        <!--                <a href="item-page.html">-->
-        <!--                    <img src="img/main-collection-two.jfif" alt="Reebok Long Sleeve Top" width="250">-->
-        <!--                    <span class="menu-nav">Reebok Long Sleeve Top</span>-->
-        <!--                </a>-->
-        <!--                <span class="menu-price">$18,00USD</span>-->
-        <!--                <span class="add-to-cart"><a href="#"> Add to cart</a></span>-->
-        <!--            </article>-->
-        <!--            <article class="main-item">-->
-        <!--                <a href="item-page.html">-->
-        <!--                    <img src="img/main-collection-three.jfif" alt="Quicksilver Workout Top" width="250">-->
-        <!--                    <span class="menu-nav">Quicksilver Workout Top</span>-->
-        <!--                </a>-->
-        <!--                <span class="menu-price">$12,00USD</span>-->
-        <!--                <span class="add-to-cart"><a href="#"> Add to cart</a></span>-->
-        <!--            </article>-->
-        <!--            &lt;!&ndash;               Need to add shoes and male collections&ndash;&gt;-->
-        <!--        </div>-->
         <div class="mid-season-sale">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
                        aria-controls="home" aria-selected="true">Women</a>
+                    <article class="main-item">
+                        <a href="item-page.html">
+                            <img src="img/main-collection-one.jfif" alt="black female in undershirt" width="250">
+                            <span class="menu-nav">Puma Sports Bra</span>
+                        </a>
+                        <span class="menu-price">$12,00USD</span>
+                        <span class="add-to-cart"><a href="#"> Add to cart</a></span>
+                    </article>
+                    <article class="main-item">
+                        <a href="item-page.html">
+                            <img src="img/main-collection-two.jfif" alt="Reebok Long Sleeve Top" width="250">
+                            <span class="menu-nav">Reebok Long Sleeve Top</span>
+                        </a>
+                        <span class="menu-price">$18,00USD</span>
+                        <span class="add-to-cart"><a href="#"> Add to cart</a></span>
+                    </article>
+                    <article class="main-item">
+                        <a href="item-page.html">
+                            <img src="img/main-collection-three.jfif" alt="Quicksilver Workout Top" width="250">
+                            <span class="menu-nav">Quicksilver Workout Top</span>
+                        </a>
+                        <span class="menu-price">$12,00USD</span>
+                        <span class="add-to-cart"><a href="#"> Add to cart</a></span>
+                    </article>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
@@ -279,34 +271,37 @@
             </div>
         </div>
     </div>
-    <div class="image-with-text">
-        <div class="block-count">
-            <h2>DEAL OF THE MONTH.</h2>
-            <h4>PUMA SPORTS BRA $50 $70</h4>
-            <p>Start your fitness story right away with this
-                comfortable bra and get advantage of our discount.
-            </p>
-            <p><a href="#new-arrivals">More details→</a></p>
-            <div class="counter">
-                <article>
-                    <h2>477</h2>
-                    <p>DAYS</p>
-                </article>
-                <article>
-                    <h2>477</h2>
-                    <p>HOURS</p>
-                </article>
-                <article>
-                    <h2>477</h2>
-                    <p>MINUTES</p>
-                </article>
-                <article>
-                    <h2>477</h2>
-                    <p>SECONDS</p>
-                </article>
-            </div>
+    <div class="sale-of-month">
+        <div class="sale-of-month-content">
+            <article class="sale-of-month-wrapper">
+                <h3 class="text-sale-of-month">DEAL OF THE MONTH<span class="brand-color">.</span></h3>
+                <h4 class="text-lower-sale-of-month">PUMA SPORTS BRA <span class="brand-color">$50</span><span
+                        class="lowest-price"><strike>$70</strike></span></h4>
+                <p>Start your fitness story right away with this<br>
+                    comfortable bra and get advantage of our discount.
+                </p>
+                <a href="#new-arrivals">More details→</a>
+                <div class="counter">
+<!--                    <article>-->
+<!--                        <h5>477</h5>-->
+<!--                        <p>DAYS</p>-->
+<!--                    </article>-->
+<!--                    <article>-->
+<!--                        <h5>477</h5>-->
+<!--                        <p>HOURS</p>-->
+<!--                    </article>-->
+<!--                    <article>-->
+<!--                        <h5>477</h5>-->
+<!--                        <p>MINUTES</p>-->
+<!--                    </article>-->
+<!--                    <article>-->
+<!--                        <h5>477</h5>-->
+<!--                        <p>SECONDS</p>-->
+<!--                    </article>-->
+                </div>
+            </article>
         </div>
-        <img src="img/deal-month-image.jfif" alt="girl in gray clothes" width="250">
+        <div class="sale-of-month-bg"></div>
     </div>
     <div>
         <div>
@@ -339,26 +334,51 @@
             <!--                Need to add other items-->
         </div>
     </div>
-    <div class="image-with-text">
-        <img src="img/about-us.jfif" alt="two men" width="250">
-        <div class="block-text">
-            <h2 id="about-us">About us.</h2>
-            <h4>Workout is an American fitness store created by fitness geeks
-                for those who love sport and try to keep fit.
-            </h4>
-            <p>At Workout, we know that great results do not come from standing still.
-                We all need to move, push boundaries, and achieve better results every day.
-                The mission of our shop is to support you in this.
-            </p>
-            <br>
-            <p>We're sure that everyday fitness can change your lives and bodies forever.
-                And we keep selling comfortable and high-tech clothes and shoes for your outstanding results.
-            </p>
-            <img src="img/facebook.svg" alt="facebook" width="16">
-            <img src="img/instagram.svg" alt="instagram" width="16">
-            <img src="img/youtube.svg" alt="youtube" width="16">
+    <div class="sale-of-month">
+        <div class="about-us" id="about-us"></div>
+        <div class="sale-of-month-content">
+            <article class="sale-of-month-wrapper">
+                <h2 class="about-us-text">About us<span class="brand-color">.</span></h2>
+                <div class="line"></div>
+                <p class="about-us-text">Workout is an American fitness store created by fitness geeks for those who
+                    love sport and try to keep fit.</p>
+                <p class="about-us-text">At Workout, we know that great results do not come from standing still. We all
+                    need to move, push boundaries, and achieve better results every day. The mission of our shop is to
+                    support you in this.</p>
+                <p class="about-us-text">We're sure that everyday fitness can change your lives and bodies forever. And we
+                    keep selling comfortable and high-tech clothes and shoes for your outstanding results.</p>
+                <div class="social-media-wrapper">
+                    <div class="icon"><a href="https://www.facebook.com/" target="_blank"><img
+                            src="img/facebook.svg" alt="facebook" class="social-media-icon"></a>
+                    </div>
+                    <div class="icon"><a href="https://www.youtube.com/" target="_blank"><img
+                            src="img/youtube.svg" alt="youtube" class="social-media-icon"></a></div>
+                    <div class="icon"><a href="https://www.instagram.com/" target="_blank"><img
+                            src="img/instagram.svg" alt="instagram" class="social-media-icon"></a></div>
+                </div>
+            </article>
         </div>
     </div>
+<!--    <div class="image-with-text">-->
+<!--        <img src="img/about-us.jfif" alt="two men" width="250">-->
+<!--        <div class="block-text">-->
+<!--            <h2 id="about-us">About us.</h2>-->
+<!--            <h4>Workout is an American fitness store created by fitness geeks-->
+<!--                for those who love sport and try to keep fit.-->
+<!--            </h4>-->
+<!--            <p>At Workout, we know that great results do not come from standing still.-->
+<!--                We all need to move, push boundaries, and achieve better results every day.-->
+<!--                The mission of our shop is to support you in this.-->
+<!--            </p>-->
+<!--            <br>-->
+<!--            <p>We're sure that everyday fitness can change your lives and bodies forever.-->
+<!--                And we keep selling comfortable and high-tech clothes and shoes for your outstanding results.-->
+<!--            </p>-->
+<!--            <img src="img/facebook.svg" alt="facebook" width="16">-->
+<!--            <img src="img/instagram.svg" alt="instagram" width="16">-->
+<!--            <img src="img/youtube.svg" alt="youtube" width="16">-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="about-us-offer">
         <article>
             <img src="img/shipping.svg" alt="vehicle" width="50">
