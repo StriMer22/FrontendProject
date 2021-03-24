@@ -14,5 +14,7 @@
     <orderEntry type="library" name="0539dee025" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="OwlCarousel2" level="application" />
+    <orderEntry type="library" name="jquery-1.11.3" level="application" />
+    <orderEntry type="library" name="test" level="application" />
   </component>
 </module>
