@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{0539dee025, OwlCarousel2, bootstrap, jquery, jquery-1.11.3, jquery-3.2.1.slim, popper.js, test}" />
+    <file url="PROJECT" libraries="{0539dee025, OwlCarousel2, bootstrap, jquery, jquery-1.11.3, jquery-3.2.1.slim, mapbox-gl, popper.js, test}" />
   </component>
 </project>

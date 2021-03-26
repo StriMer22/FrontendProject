@@ -14,9 +14,11 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/carousel.css">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/basket.css">
+    <link rel="stylesheet" href="css/map.css">
 </head>
 
 <body>
@@ -79,7 +81,9 @@
     <div id="easynetshop-cart">
         <div id="enscart_wrapper">
             <div id="enscart_image_wrapper">
-                <img src="img/shop-icon.png" alt="shop icon">
+                <a data-bs-toggle="modal" data-bs-target="#shoppingCartModal">
+                    <img src="img/shop-icon.png" alt="shop icon">
+                </a>
             </div>
             <div id="enscart_counter_wrapper"><span id="easynetshop-cart-count"> 0 </span></div>
         </div>
@@ -242,24 +246,6 @@
                     comfortable bra and get advantage of our discount.
                 </p>
                 <a href="#new-arrivals">More details→</a>
-                <div class="counter">
-                    <!--                    <article>-->
-                    <!--                        <h5>477</h5>-->
-                    <!--                        <p>DAYS</p>-->
-                    <!--                    </article>-->
-                    <!--                    <article>-->
-                    <!--                        <h5>477</h5>-->
-                    <!--                        <p>HOURS</p>-->
-                    <!--                    </article>-->
-                    <!--                    <article>-->
-                    <!--                        <h5>477</h5>-->
-                    <!--                        <p>MINUTES</p>-->
-                    <!--                    </article>-->
-                    <!--                    <article>-->
-                    <!--                        <h5>477</h5>-->
-                    <!--                        <p>SECONDS</p>-->
-                    <!--                    </article>-->
-                </div>
             </article>
         </div>
         <div class="sale-of-month-bg"></div>
@@ -380,15 +366,15 @@
             </div>
         </div>
     </div>
-    <div class="map">
-        <!--        <iframe-->
-        <!--                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5452.398797368164!2d24.03204729572189!3d49.83889653574557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6b95194e13%3A0x8abc8e43811ab64e!2sLychakivska%20St%2C%201%2C%20L&#39;viv%2C%20L&#39;vivs&#39;ka%20oblast%2C%20Ukraine%2C%2079000!5e0!3m2!1sen!2spl!4v1614878487308!5m2!1sen!2spl"-->
-        <!--                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
-        <div class="contacts">
-            <h2 id="contact-us">Contacts.</h2>
-            <p>Lychakivska St, 1, Lviv</p>
-            <p><a href="tel:+12345678900"> +1 (234) 567 89 00</a></p>
-            <p>homen932@gmail.com</p>
+    <div class="container">
+        <div class="map-container">
+            <div id="map" class="map"></div>
+            <div class="contacts">
+                <h2 id="contact-us">Contacts<span class="brand-color">.</span></h2>
+                <p>Lychakivska St, 1, Lviv</p>
+                <a href="tel:+12345678900"> +1 (234) 567 89 00</a>
+                <p>homen932@gmail.com</p>
+            </div>
         </div>
     </div>
 </main>
@@ -426,7 +412,7 @@
                     <div class="footer-nav-social">
                         <h2>Follow Us</h2>
                         <div class="line"></div>
-                        <div class="social-media">
+                        <div class="social-media-bottom">
                             <div class="social-media-wrapper">
                                 <div class="icon"><a href="https://www.facebook.com/" target="_blank"><img
                                         src="img/facebook.svg" alt="facebook" class="social-media-icon"></a>
@@ -452,6 +438,7 @@
         </div>
     </div>
 </footer>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
@@ -463,8 +450,7 @@
         crossorigin="anonymous"></script>
 <script src="js/carousel-owl.js"></script>
 <script src="js/main-collection.js"></script>
-<script src="js/carousel-products.js"></script>
-
+<script src="js/map.js"></script>
 </body>
 
 </html>

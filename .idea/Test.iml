@@ -16,5 +16,6 @@
     <orderEntry type="library" name="OwlCarousel2" level="application" />
     <orderEntry type="library" name="jquery-1.11.3" level="application" />
     <orderEntry type="library" name="test" level="application" />
+    <orderEntry type="library" name="mapbox-gl" level="application" />
   </component>
 </module>

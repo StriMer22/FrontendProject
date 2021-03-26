@@ -1,0 +1,86 @@
+#map {
+    border: 2px solid #333;
+    width: 75vw;
+    height: 75vh;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.marker {
+    background-image: url('../img/map-marker.svg');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.contacts {
+    padding: 30px;
+}
+
+.contacts h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--fifth-color);
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.contacts p {
+    font-size: 20px;
+    color: #717474;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+}
+
+.contacts a {
+    font-size: 20px;
+    color: #717474;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+
+    .map-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-column-end: auto;
+        text-align: center;
+    }
+
+    #map {
+        width: 60vw;
+        height: 50vh;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+
+    #map {
+        width: 80vw;
+        height: 40vh;
+    }
+}
+
