@@ -14,6 +14,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/basket.css">
 </head>
@@ -224,9 +225,9 @@
                 </span>
         <div class="main-collection-block">
             <div class="main-collection-tittle">
-                <a class="main-collection-link" id="tab-women-button" href="##">Women</a>
-                <a class="main-collection-link" id="tab-men-button" href="##">Men</a>
-                <a class="main-collection-link" id="tab-shoes-button" href="##">Shoes</a>
+                <a class="main-collection-link" id="tab-women-button" href="javascript:void(0)">Women</a>
+                <a class="main-collection-link" id="tab-men-button" href="javascript:void(0)">Men</a>
+                <a class="main-collection-link" id="tab-shoes-button" href="javascript:void(0)">Shoes</a>
             </div>
             <div class="main-collection-content"></div>
         </div>
@@ -392,40 +393,63 @@
     </div>
 </main>
 <footer>
-    <div class="footer-background">
-        <div class="footer-element">
-            <a href="index.html">
-                <img src="img/logo.svg" alt="logo" width="169">
-            </a>
-            <p>Workout offers fitness clothing and footwear for those who want to change their lives and bodies for
-                better.
-            </p>
-        </div>
-        <div class="footer-links">
-            <article>
-                <h2>Navigation</h2>
-                <p><a href="#collection">Collection</a></p>
-                <p><a href="#about-us">About us </a></p>
-                <p><a href="#contact-us">Contacts</a></p>
-            </article>
-            <article>
-                <h2>Shop</h2>
-                <p><a href="#hot-collection">Mid season sale</a></p>
-                <p><a href="#new-arrivals">New arrivals</a></p>
-                <p><a href="#collection">Main collection</a></p>
-            </article>
-            <article>
-                <h2>Follow Us</h2>
-                <img src="img/facebook.svg" alt="facebook" width="16">
-                <img src="img/instagram.svg" alt="instagram" width="16">
-                <img src="img/youtube.svg" alt="youtube" width="16">
-
-            </article>
+    <div class="footer-background-color">
+        <div class="container">
+            <div class="footer-background">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="logo" class="logo-responsive">
+                    </a>
+                    <span>Workout offers fitness clothing and footwear for those who want to change their lives and bodies for
+                    better.
+                </span>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-elements">
+                        <h2>Navigation</h2>
+                        <div class="line"></div>
+                        <a href="#collection">Collection</a>
+                        <a href="#about-us">About us </a>
+                        <a href="#contact-us">Contacts</a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-elements">
+                        <h2>Shop</h2>
+                        <div class="line"></div>
+                        <a href="#hot-collection">Mid season sale</a>
+                        <a href="#new-arrivals">New arrivals</a>
+                        <a href="#collection">Main collection</a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-social">
+                        <h2>Follow Us</h2>
+                        <div class="line"></div>
+                        <div class="social-media">
+                            <div class="social-media-wrapper">
+                                <div class="icon"><a href="https://www.facebook.com/" target="_blank"><img
+                                        src="img/facebook.svg" alt="facebook" class="social-media-icon"></a>
+                                </div>
+                                <div class="icon"><a href="https://www.youtube.com/" target="_blank"><img
+                                        src="img/youtube.svg" alt="youtube" class="social-media-icon"></a></div>
+                                <div class="icon"><a href="https://www.instagram.com/" target="_blank"><img
+                                        src="img/instagram.svg" alt="instagram" class="social-media-icon"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>© Created by Dmytro Boiko</p>
-        <p>All rights Reserved</p>
+    <div class="footer-bottom-background">
+        <div class="container">
+            <div class="line"></div>
+            <div class="footer-bottom">
+                <p>© Created by Dmytro Boiko</p>
+                <p>All rights Reserved</p>
+            </div>
+        </div>
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -439,6 +463,7 @@
         crossorigin="anonymous"></script>
 <script src="js/carousel-owl.js"></script>
 <script src="js/main-collection.js"></script>
+<script src="js/carousel-products.js"></script>
 
 </body>
 

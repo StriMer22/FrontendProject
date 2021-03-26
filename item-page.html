@@ -3,47 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <header>
-    <div>
+    <div class="head">
         <div class="header-top">
-            <label>
-                <select data-placeholder="Choose a language">
-                    <option value="EN">English</option>
-                    <option value="PL">Polish</option>
-                </select>
-            </label>
-            <div>
-                <p>homen932@gmail.com</p>
-                <p>+1 (234) 567 89 00</p>
+            <div class="container">
+                <div class="header-contact">
+                    <label>
+                        <select data-placeholder="Choose a language">
+                            <option value="EN">English</option>
+                            <option value="PL">Polish</option>
+                        </select>
+                    </label>
+                    <div class="contact-tag">
+                        <span class="header-text">homen932@gmail.com</span>
+                        <span class="header-text">+1 (234) 567 89 00</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="header-bottom">
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html#collection">Collection</a></li>
-                    <li><a href="index.html#mid-season-sale">Sale</a></li>
-                    <li><a href="index.html#about-us">About us</a></li>
-                    <li><a href="index.html#contact-us">Contact us</a></li>
-                </ul>
-            </nav>
-            <div class="banner">
-                <a href="index.html">
-                <img src="img/logo.svg" alt="logo" width="169">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/">
-                    <img src="img/facebook.svg" alt="facebook" width="16">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="img/instagram.svg" alt="instagram" width="16">
-                </a>
-                <a href="https://www.youtube.com/">
-                    <img src="img/youtube.svg" alt="youtube" width="16">
-                </a>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logo.svg" alt="Companies logo" class="logo-responsive">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbar-menu" id="navbar">
+                            <div class="navbar-nav">
+                                <a class="menu-nav" href="#collection">Collection</a>
+                                <a class="menu-nav" href="#hot-collection">Sale</a>
+                                <a class="menu-nav" href="#about-us">About us</a>
+                                <a class="menu-nav" href="#contact-us">Contact us</a>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="social-media-wrapper">
+                                <div class="icon"><a href="https://www.facebook.com/" target="_blank"><img
+                                        src="img/facebook.svg" alt="facebook" class="social-media-icon"></a>
+                                </div>
+                                <div class="icon"><a href="https://www.youtube.com/" target="_blank"><img
+                                        src="img/youtube.svg" alt="youtube" class="social-media-icon"></a></div>
+                                <div class="icon"><a href="https://www.instagram.com/" target="_blank"><img
+                                        src="img/instagram.svg" alt="instagram" class="social-media-icon"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
@@ -70,42 +93,67 @@
 
 </main>
 <footer>
-    <div class="footer-background">
-        <div class="footer-element">
-            <a href="index.html">
-                <img src="img/logo.svg" alt="logo" width="169">
-            </a>
-            <p>Workout offers fitness clothing and footwear for those who want to change their lives and bodies for
-                better.
-            </p>
-        </div>
-        <div class="footer-links">
-            <article>
-                <h2>Navigation</h2>
-                <p><a href="index.html#collection">Collection</a></p>
-                <p><a href="index.html#about-us">About us </a></p>
-                <p><a href="index.html#contact-us">Contacts</a></p>
-            </article>
-            <article>
-                <h2>Shop</h2>
-                <p><a href="index.html#mid-season-sale">Mid season sale</a></p>
-                <p><a href="index.html#new-arrivals">New arrivals</a></p>
-                <p><a href="index.html#collection">Main collection</a></p>
-            </article>
-            <article>
-                <h2>Follow Us</h2>
-                <img src="img/facebook.svg" alt="facebook" width="16">
-                <img src="img/instagram.svg" alt="instagram" width="16">
-                <img src="img/youtube.svg" alt="youtube" width="16">
-
-            </article>
+    <div class="footer-background-color">
+        <div class="container">
+            <div class="footer-background">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="logo" class="logo-responsive">
+                    </a>
+                    <span>Workout offers fitness clothing and footwear for those who want to change their lives and bodies for
+                    better.
+                </span>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-elements">
+                        <h2>Navigation</h2>
+                        <div class="line"></div>
+                        <a href="#collection">Collection</a>
+                        <a href="#about-us">About us </a>
+                        <a href="#contact-us">Contacts</a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-elements">
+                        <h2>Shop</h2>
+                        <div class="line"></div>
+                        <a href="#hot-collection">Mid season sale</a>
+                        <a href="#new-arrivals">New arrivals</a>
+                        <a href="#collection">Main collection</a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-social">
+                        <h2>Follow Us</h2>
+                        <div class="line"></div>
+                        <div class="social-media">
+                            <div class="social-media-wrapper">
+                                <div class="icon"><a href="https://www.facebook.com/" target="_blank"><img
+                                        src="img/facebook.svg" alt="facebook" class="social-media-icon"></a>
+                                </div>
+                                <div class="icon"><a href="https://www.youtube.com/" target="_blank"><img
+                                        src="img/youtube.svg" alt="youtube" class="social-media-icon"></a></div>
+                                <div class="icon"><a href="https://www.instagram.com/" target="_blank"><img
+                                        src="img/instagram.svg" alt="instagram" class="social-media-icon"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>© Created by</p>
-        <p>All rights Reserved</p>
+    <div class="footer-bottom-background">
+        <div class="container">
+            <div class="line"></div>
+            <div class="footer-bottom">
+                <p>© Created by Dmytro Boiko</p>
+                <p>All rights Reserved</p>
+            </div>
+        </div>
     </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 </html>

@@ -376,11 +376,24 @@ header .menu-nav {
     font-size: 18px;
 }
 
+.main-collection-item .menu-nav {
+    color: #717474;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+}
+
 .season-item .menu-nav:hover {
     text-decoration: underline;
 }
 
 .season-item .menu-price {
+    padding: 25px;
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main-collection-item .menu-price {
     padding: 25px;
     color: var(--secondary-color);
     font-size: 18px;
@@ -394,6 +407,20 @@ header .menu-nav {
     font-family: "PT Sans", sans-serif;
     width: 140px;
     height: 55px;
+}
+
+.main-collection-item .shop-button {
+    background-color: var(--fifth-color);
+    color: var(--main-color);
+    font-weight: 700;
+    font-family: "PT Sans", sans-serif;
+    width: 140px;
+    height: 55px;
+    border: none;
+}
+
+.main-collection-item .shop-button:hover {
+    background-color: var(--secondary-color);
 }
 
 .season-item .shop-button:hover {
@@ -570,6 +597,7 @@ header .menu-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    padding-bottom: 50px;
 }
 
 .main-collection-tittle {
@@ -580,10 +608,14 @@ header .menu-nav {
 
 .main-collection-link {
     color: #717474;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     height: 100%;
     padding-left: 50px;
+}
+
+.main-collection-link:hover {
+    color: var(--secondary-color);
 }
 
 .sale-of-month-wrapper p {
@@ -742,13 +774,97 @@ header .menu-nav {
     flex-direction: column;
 }
 
-.footer-background {
+.footer-background-color {
     background: rgb(34, 35, 35);
     background: linear-gradient(0deg, rgba(34, 35, 35, 1) 11%, rgba(101, 101, 101, 1) 100%);
 }
 
+.footer-background {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 34% 23% 23% 20%;
+    padding-top: 75px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.footer-logo span {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    padding-top: 20px;
+}
+
+.footer-logo .logo-responsive {
+    width: 179px;
+}
+
+.footer-nav-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-nav h2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 22px;
+    color: var(--main-color);
+}
+
+
+.footer-nav a {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    color: var(--main-color);
+    padding-top: 10px;
+}
+
+.footer-nav a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.footer-bottom-background {
+    background: var(--fifth-color);
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .footer-bottom {
-    background: #222323;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    font-family: "Bebas Neue", cursive;
+    font-size: 14px;
+    color: var(--main-color);
+    padding-top: 25px;
+}
+
+.footer-bottom-background .line {
+    width: 100%;
+    padding-top: 0.1%;
+    background-color:rgb(71,72,72);
+}
+
+.footer-nav .line{
+    width: 3.5vw;
+    padding-top: 0.5%;
+}
+
+.footer-nav-social{
+    text-align: right;
+}
+
+.footer-nav-social .social-media{
+    padding-top: 40px;
 }
 
 @media screen and (min-width: 2600px) {
@@ -811,6 +927,10 @@ header .menu-nav {
 
 
 @media screen and (max-width: 992px) {
+    .main-collection-content {
+
+    }
+
     .header-contact {
         display: none;
     }
@@ -892,6 +1012,10 @@ header .menu-nav {
         padding-bottom: 80px;
     }
 
+    .main-collection-image {
+        max-width: 250px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -927,6 +1051,22 @@ header .menu-nav {
     .new-arrival {
         display: grid;
 
+    }
+
+    .main-collection-block {
+        width: 100%;
+        padding: 0 20px 0 20px;
+    }
+
+    .main-collection-item {
+        grid-template-columns: 100%;
+        width: 100%;
+        grid-row-gap: 60px;
+    }
+
+    .main-collection-image {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -1009,6 +1149,12 @@ header .menu-nav {
 
     .text-sale-of-month {
         font-size: 60px;
+    }
+
+    .main-collection-item .shop-button {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
     }
 
 }
