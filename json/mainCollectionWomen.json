@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Puma Sports Bra",
+    "price": 12.00,
+    "image": "main-collection-one.jfif"
+  },
+  {
+    "title": "Reebok Long Sleave Top",
+    "price": 18.00,
+    "image": "main-collection-two.jfif"
+  },
+  {
+    "title": "Quicksilver Workout Top",
+    "price": 12.00,
+    "image": "main-collection-three.jfif"
+  }
+]

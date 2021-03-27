@@ -28,9 +28,9 @@
             <div class="container">
                 <div class="header-contact">
                     <label>
-                        <select data-placeholder="Choose a language">
-                            <option value="EN">English</option>
-                            <option value="PL">Polish</option>
+                        <select class="selectpicker" data-width="fit">
+                            <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                            <option data-content='<span class="flag-icon flag-icon-mx"></span> Polish'>Polish</option>
                         </select>
                     </label>
                     <div class="contact-tag">
@@ -78,16 +78,6 @@
     </div>
 </header>
 <main>
-    <div id="easynetshop-cart">
-        <div id="enscart_wrapper">
-            <div id="enscart_image_wrapper">
-                <a href="#">
-                    <img src="img/shop-icon.png" alt="shop icon">
-                </a>
-            </div>
-            <div id="enscart_counter_wrapper"><span id="easynetshop-cart-count"> 0 </span></div>
-        </div>
-    </div>
     <div class="first-big-picture">
         <div class="large-item">
             <div class="entire-image">
@@ -123,7 +113,7 @@
     </div>
     <div class="carousel-brands">
         <div class="container">
-            <div class="owl-one owl-carousel owl-theme">
+            <div class="second-owl owl-carousel owl-theme">
                 <div class="item"><img src="img/addidas.svg" class="d-block w-100" alt="adidas logo"></div>
                 <div class="item"><img src="img/acics.svg" class="d-block w-100" alt="asics logo"></div>
                 <div class="item"><img src="img/new-balance.svg" class="d-block w-100" alt="new balance logo"></div>
@@ -222,7 +212,7 @@
             </div>
         </article>
     </div>
-    <div class="mid-season-sale container space">
+    <div class="main-collection container space">
         <span class="tittle-text-content" id="collection">main COLLECTION<span class="brand-color">.</span></span>
         <div class="line"></div>
         <span class="under-tittle-text">Shop our main fitness collection for men and women represented by the famous brands.
@@ -252,59 +242,60 @@
     </div>
     <div class="new-arrival">
         <div class="container">
-            <article class="new-arrival-text">
-                            <span id="new-arrivals" class="tittle-text-content">New arrivals<span
-                                    class="brand-color">.</span></span>
-                <div class="line"></div>
-                <span class="under-tittle-text">Be the first to buy new items by leading brands.</span>
-                <a href="#collection" class="shop-button">More products</a>
-            </article>
-            <!--            Carouesel items-->
-            <!--            <div class="owl-two owl-carousel owl-theme">-->
-            <!--                <div class="season-item w-100">-->
-            <!--                    <a href="item-page.html">-->
-            <!--                        <img src="img/arrival-collection-red.jfif" alt="Reebok Red Duster" class="item-img">-->
-            <!--                        <span class="menu-nav">Reebok Red Duster</span>-->
-            <!--                    </a>-->
-            <!--                    <span class="menu-price">$60,00USD</span>-->
-            <!--                    <a href="#" class="shop-button">Add to cart</a>-->
-            <!--                </div>-->
-            <!--                <div class="season-item w-100">-->
-            <!--                    <a href="item-page.html">-->
-            <!--                        <img src="img/arrival-collection-black-asics.jfif" alt="Asics Jordan 2000" class="item-img">-->
-            <!--                        <span class="menu-nav">Asics Jordan 2000</span>-->
-            <!--                    </a>-->
-            <!--                    <span class="menu-price">$200,00USD</span>-->
-            <!--                    <a href="#" class="shop-button">Add to cart</a>-->
-            <!--                </div>-->
-            <!--                <div class="season-item w-100">-->
-            <!--                    <a href="item-page.html" class="item-link">-->
-            <!--                        <img src="img/arrival-collection-black-sneakers.jfif" alt="Adidas Black Trainers"-->
-            <!--                             class="item-img">-->
-            <!--                        <span class="menu-nav">Adidas Black Trainers</span>-->
-            <!--                    </a>-->
-            <!--                    <span class="menu-price">$60,00USD</span>-->
-            <!--                    <a href="#" class="shop-button">Add to cart</a>-->
-            <!--                </div>-->
-            <!--                <div class="season-item w-100">-->
-            <!--                    <a href="item-page.html">-->
-            <!--                        <img src="img/arrival-collection-blue-jacket.jfif" alt="Nike Winter Jacket in Blue"-->
-            <!--                             class="item-img ">-->
-            <!--                        <span class="menu-nav">Nike Winter Jacket in Blue</span>-->
-            <!--                    </a>-->
-            <!--                    <span class="menu-price">$85,00USD</span>-->
-            <!--                    <a href="#" class="shop-button">Add to cart</a>-->
-            <!--                </div>-->
-            <!--                <div class="season-item w-100">-->
-            <!--                    <a href="item-page.html">-->
-            <!--                        <img src="img/arrival-collection-blue-sneakers.jfif" alt="Puma Textile Running Shoes"-->
-            <!--                             class="item-img">-->
-            <!--                        <span class="menu-nav">Puma Textile Running Shoes</span>-->
-            <!--                    </a>-->
-            <!--                    <span class="menu-price">$62,00USD</span>-->
-            <!--                    <a href="#" class="shop-button">Add to cart</a>-->
-            <!--                </div>-->
-            <!--            </div>-->
+            <div class="control-new">
+                <article class="new-arrival-text">
+                <span id="new-arrivals" class="tittle-text-content">New arrivals<span
+                        class="brand-color">.</span></span>
+                    <div class="line"></div>
+                    <span class="under-tittle-text">Be the first to buy new items by leading brands.</span>
+                    <a href="#collection" class="shop-button">More products</a>
+                </article>
+                <div class="owl owl-carousel owl-theme">
+                    <div class="season-item w-100">
+                        <a href="item-page.html">
+                            <img src="img/arrival-collection-red.jfif" alt="Reebok Red Duster" class="item-img">
+                            <span class="menu-nav">Reebok Red Duster</span>
+                        </a>
+                        <span class="menu-price">$60,00USD</span>
+                        <a href="#" class="shop-button">Add to cart</a>
+                    </div>
+                    <div class="season-item w-100">
+                        <a href="item-page.html">
+                            <img src="img/arrival-collection-black-asics.jfif" alt="Asics Jordan 2000" class="item-img">
+                            <span class="menu-nav">Asics Jordan 2000</span>
+                        </a>
+                        <span class="menu-price">$200,00USD</span>
+                        <a href="#" class="shop-button">Add to cart</a>
+                    </div>
+                    <div class="season-item w-100">
+                        <a href="item-page.html" class="item-link">
+                            <img src="img/arrival-collection-black-sneakers.jfif" alt="Adidas Black Trainers"
+                                 class="item-img">
+                            <span class="menu-nav">Adidas Black Trainers</span>
+                        </a>
+                        <span class="menu-price">$60,00USD</span>
+                        <a href="#" class="shop-button">Add to cart</a>
+                    </div>
+                    <div class="season-item w-100">
+                        <a href="item-page.html">
+                            <img src="img/arrival-collection-blue-jacket.jfif" alt="Nike Winter Jacket in Blue"
+                                 class="item-img ">
+                            <span class="menu-nav">Nike Winter Jacket in Blue</span>
+                        </a>
+                        <span class="menu-price">$85,00USD</span>
+                        <a href="#" class="shop-button">Add to cart</a>
+                    </div>
+                    <div class="season-item w-100">
+                        <a href="item-page.html">
+                            <img src="img/arrival-collection-blue-sneakers.jfif" alt="Puma Textile Running Shoes"
+                                 class="item-img">
+                            <span class="menu-nav">Puma Textile Running Shoes</span>
+                        </a>
+                        <span class="menu-price">$62,00USD</span>
+                        <a href="#" class="shop-button">Add to cart</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="sale-of-month">
@@ -375,6 +366,71 @@
                 <a href="tel:+12345678900"> +1 (234) 567 89 00</a>
                 <p>homen932@gmail.com</p>
             </div>
+        </div>
+    </div>
+    <!--    Modal window shopping cart-->
+    <div class="modal fade" id="shoppingCartWindow" tabindex="-1" aria-labelledby="shoppingCartLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shoppingCartLabel">Shopping cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-product">
+                        <p class="modal-body-title">Products</p>
+                        <div class="modal-body-wrap">
+                            <div class="modal-body-item">
+                                <img src="img/main-collection-one.jfif" alt="sneakers" class="modal-body-image">
+                                <p class="modal-body-name">Puma Sports Bra</p>
+                            </div>
+                            <div class="modal-body-amount">
+                                <label>
+                                    <input type="number" readonly value="1">
+                                </label>
+                                <p class="modal-body-price">$12.00USD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="modal-body-sum">Total: $12,00USD</p>
+                    <div>
+                        <p class="modal-body-title">Place an order</p>
+                        <form action="" class="modal-body-form">
+                            <label>
+                                Name*
+                                <input type="text" placeholder="Your name">
+                            </label>
+                            <label>
+                                Email*
+                                <input type="email" placeholder="Your email address">
+                            </label>
+                            <label>
+                                Phone*
+                                <input type="tel" placeholder="Your phone">
+                            </label>
+                            <label>
+                                Comment
+                                <textarea name="" id="" placeholder="Your comment"></textarea>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="modal-footer-close" data-bs-dismiss="modal">Continue shopping</a>
+                        <button type="button" class="modal-footer-order">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="shop-cart">
+        <div id="cart_wrapper">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingCartWindow">
+                <div id="cart_image_wrapper">
+                    <img src="img/shop-icon.png" alt="shop icon">
+                </div>
+            </a>
+            <div id="cart_counter_wrapper"><span id="shop-cart-count"> 0 </span></div>
         </div>
     </div>
 </main>

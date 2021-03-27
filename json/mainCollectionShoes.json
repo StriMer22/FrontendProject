@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Adidas Campus",
+    "price": 130.00,
+    "image": "main-collection-shoes-one.jfif"
+  },
+
+  {
+    "title": "Puma Basket Shoes",
+    "price": 140.00,
+    "image": "main-collection-shoes-two.jfif"
+  },
+  {
+    "title": "Nike Amanda Running Shoes",
+    "price": 120.00,
+    "image": "main-collection-shoes-three.jfif"
+  }
+]
