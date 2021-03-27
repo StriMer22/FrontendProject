@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Reebok Red Duster",
+    "price": 60.00,
+    "image": "arrival-collection-red.jfif"
+  },
+  {
+    "title": "Asics Jordan 2000",
+    "price": 200.00,
+    "image": "arrival-collection-black-asics.jfif"
+  },
+  {
+    "title": "Puma Textile Running Shoes",
+    "price": 62.00,
+    "image": "arrival-collection-blue-sneakers.jfif"
+  },
+  {
+    "title": "Nike Winter Jacket in Blue",
+    "price": 85.00,
+    "image": "arrival-collection-blue-jacket.jfif"
+  },
+  {
+    "title": "Adidas Black Trainers",
+    "price": 60.00,
+    "image": "arrival-collection-black-sneakers.jfif"
+  }
+]

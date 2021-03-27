@@ -2,26 +2,26 @@
   {
     "title": "Adidas Cloudfoam Trainers",
     "price": 60.00,
-    "image": "trainers.jpg"
+    "image": "season-item-one.jpg"
   },
   {
     "title": "Reebok Workout Shorts",
     "price": 25.00,
-    "image": "shorts.jpg"
+    "image": "season-item-two.jpg"
   },
   {
     "title": "Puma Fitness Shoes in Grey",
     "price": 60.00,
-    "image": "sneakers.jpg"
+    "image": "season-item-three.jpg"
   },
   {
     "title": "Puma Essential Tank Top",
     "price": 43.00,
-    "image": "top.jpg"
+    "image": "season-item-four.jpg"
   },
   {
     "title": "Nike Classic Polo T-Shirt",
     "price": 23.00,
-    "image": "polo.jpg"
+    "image": "season-item-five.jpg"
   }
 ]

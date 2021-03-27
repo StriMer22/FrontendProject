@@ -383,6 +383,15 @@ header .menu-nav {
     flex-wrap: wrap;
 }
 
+.mid-season-collection{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
 .season-item {
     width: 300px;
     text-align: center;
