@@ -1,6 +1,6 @@
 function renderProdNew(item) {
     const products = document.querySelector('.new-arrival-collection');
-    products.innerHTML = '';
+    products.innerHTML = ' ';
     for (const product of item) {
         products.innerHTML += `
                     <div class="season-item w-100">

@@ -1,6 +1,6 @@
 function renderProdMid(item) {
     const products = document.querySelector('.mid-season-collection');
-    products.innerHTML = '';
+    products.innerHTML = ' ';
     for (const product of item) {
         products.innerHTML += `
                 <div class="season-item">
