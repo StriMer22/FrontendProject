@@ -3,18 +3,18 @@ class ShoppingCart {
         this.productService = new ProductsService();
         this.cartContainer = document.querySelector("#shoppingCartWindow");
         this.cart = JSON.parse(localStorage["cart"] || "{}");
-        this.addEventListeners();
+        // this.addEventListeners();
     }
-
-    addEventListeners() {
-        document
-            .querySelector(".openCart")
-            .addEventListener("click", () => this.renderCart());
-    }
-
-    saveCart() {
-        localStorage['cart'] = JSON.stringify(this.cart);
-    }
+    //
+    // addEventListeners() {
+    //     document
+    //         .querySelector(".openCart")
+    //         .addEventListener("click", () => this.renderCart());
+    // }
+    //
+    // saveCart() {
+    //     localStorage['cart'] = JSON.stringify(this.cart);
+    // }
 
 //     async renderCart() {
 //         let total = 0;
