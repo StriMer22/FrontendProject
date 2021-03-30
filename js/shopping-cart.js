@@ -39,13 +39,13 @@ class ShoppingCart {
                             </div>
                             <div class="modal-body-amount">
                                 <div class="modal-body-amount-inputs">
-                                <div class="col-1"><button data-id=${id} class="btn btn-sm plus">+</button></div>
-                                <input type="number" value="${this.cart[id]}">
                                 <div class="col-1"><button data-id=${id} class="btn btn-sm minus">-</button></div>
+                                <input type="number" value="${this.cart[id]}">
+                                <div class="col-1"><button data-id=${id} class="btn btn-sm plus">+</button></div>
                                 <p class="modal-body-price">$${product.price}.00USD</p>
                                 </div>
                                 <span class="modal-body-delete" data-id="${id}">
-                                <div class="col-1"><button data-id=${id} class="btn btn-sm minus"><img src="img/instagram.svg" alt=""></button></div>
+                                <img src="img/bin.png" alt="">
                                 </span>
                             </div>
                         </div>
@@ -54,9 +54,8 @@ class ShoppingCart {
         }
         total = total.toFixed(2);
         cartDomSting += `
-                  <div class="row">
-                      <div class="col-5"><strong>TOTAL</strong></div>
-                      <div class="col-1"><strong>$${total}</strong></div>
+                  <div class="row total">
+                      <div class="col-1"><strong class="total-price">TOTAL: $${total}</strong></div>
                   </div>      
                   `;
         cartDomSting += this.concatForm();
@@ -105,7 +104,8 @@ class ShoppingCart {
     }
 
     concatForm() {
-        return `<div>
+        return `
+                    <div>
                         <p class="modal-body-title">Place an order</p>
                         <form action="" class="modal-body-form">
                             <label>
@@ -150,7 +150,7 @@ class ShoppingCart {
 
     deleteOneProduct(id) {
         this.cart[id] = (this.cart[id] || 0) - 1;
-        if (this.cart[id] === 0){
+        if (this.cart[id] === 0) {
             delete this.cart[id];
         }
         this.saveCart();
@@ -168,3 +168,4 @@ class ShoppingCart {
         this.updateCartCounter();
     }
 }
+

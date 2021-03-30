@@ -118,7 +118,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 350px;
+    margin-left: 300px;
     width: 270px;
 }
 
@@ -150,12 +150,12 @@
     font-size: 16px;
     text-transform: uppercase;
     margin-left: 25px;
+    margin-right: 25px;
 }
 
 .modal-body-delete {
     width: 20px;
     height: 20px;
-    background: deeppink;
     cursor: pointer;
 }
 
@@ -253,6 +253,13 @@
     background-color: #f40106;
     outline: none;
     border: 0;
+}
+
+
+.total-price {
+    position: absolute;
+    right:0;
+    padding-right: 60px;
 }
 
 
