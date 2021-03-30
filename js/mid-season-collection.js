@@ -9,7 +9,7 @@ function renderProdMid(item) {
                         <span class="menu-nav">${product.title}</span>
                         </a>
                         <span class="menu-price">$${product.price},00USD</span>
-                        <a href="#" class="btn btn-primary basket-shop-btn" data-id="${product.id}">Add to Cart</a>
+                        <a href="javascript:void(0)" class="btn btn-primary basket-shop-btn" data-id="${product.id}">Add to Cart</a>
                  </div>
         `
     }

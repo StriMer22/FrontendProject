@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
           integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
           crossorigin="anonymous"/>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-          crossorigin="anonymous"/>
-
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/basket.css">
@@ -213,14 +208,14 @@
                 </article>
 
                 <div class="owl owl-carousel owl-theme">
-<!--                    <div class="new-arrival-collection"></div>-->
+                    <!--                    <div class="new-arrival-collection"></div>-->
                     <div class="season-item w-100">
                         <a href="item-page.html">
                             <img src="img/arrival-collection-red.jfif" alt="Reebok Red Duster" class="item-img">
                             <span class="menu-nav">Reebok Red Duster</span>
                         </a>
                         <span class="menu-price">$60,00USD</span>
-                        <a href="#" class="shop-button">Add to cart</a>
+                        <a href="javascript:void(0)" class="shop-button">Add to cart</a>
                     </div>
                     <div class="season-item w-100">
                         <a href="item-page.html">
@@ -228,7 +223,7 @@
                             <span class="menu-nav">Asics Jordan 2000</span>
                         </a>
                         <span class="menu-price">$200,00USD</span>
-                        <a href="#" class="shop-button">Add to cart</a>
+                        <a href="javascript:void(0)" class="shop-button">Add to cart</a>
                     </div>
                     <div class="season-item w-100">
                         <a href="item-page.html" class="item-link">
@@ -237,7 +232,7 @@
                             <span class="menu-nav">Adidas Black Trainers</span>
                         </a>
                         <span class="menu-price">$60,00USD</span>
-                        <a href="#" class="shop-button">Add to cart</a>
+                        <a href="javascript:void(0)" class="shop-button">Add to cart</a>
                     </div>
                     <div class="season-item w-100">
                         <a href="item-page.html">
@@ -246,7 +241,7 @@
                             <span class="menu-nav">Nike Winter Jacket in Blue</span>
                         </a>
                         <span class="menu-price">$85,00USD</span>
-                        <a href="#" class="shop-button">Add to cart</a>
+                        <a href="javascript:void(0)" class="shop-button">Add to cart</a>
                     </div>
                     <div class="season-item w-100">
                         <a href="item-page.html">
@@ -255,7 +250,7 @@
                             <span class="menu-nav">Puma Textile Running Shoes</span>
                         </a>
                         <span class="menu-price">$62,00USD</span>
-                        <a href="#" class="shop-button">Add to cart</a>
+                        <a href="javascript:void(0)" class="shop-button">Add to cart</a>
                     </div>
                 </div>
             </div>
@@ -335,54 +330,7 @@
     <div class="modal fade" id="shoppingCartWindow" tabindex="-1" aria-labelledby="shoppingCartLabel"
          aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="shoppingCartLabel">Shopping cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-<!--                    <div class="modal-body-product">-->
-<!--                        <p class="modal-body-title">Products</p>-->
-<!--                        <div class="modal-body-wrap">-->
-<!--                            <div class="modal-body-item">-->
-<!--                                <img src="img/main-collection-one.jfif" alt="sneakers" class="modal-body-image">-->
-<!--                                <p class="modal-body-name">Puma Sports Bra</p>-->
-<!--                            </div>-->
-<!--                            <div class="modal-body-amount">-->
-<!--                                <label>-->
-<!--                                    <input type="number" readonly value="1">-->
-<!--                                </label>-->
-<!--                                <p class="modal-body-price">$12.00USD</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <p class="modal-body-sum">Total: $12,00USD</p>-->
-                    <div>
-                        <p class="modal-body-title">Place an order</p>
-                        <form action="" class="modal-body-form">
-                            <label>
-                                Name*
-                                <input type="text" placeholder="Your name">
-                            </label>
-                            <label>
-                                Email*
-                                <input type="email" placeholder="Your email address">
-                            </label>
-                            <label>
-                                Phone*
-                                <input type="tel" placeholder="Your phone">
-                            </label>
-                            <label>
-                                Comment
-                                <textarea name="" id="" placeholder="Your comment"></textarea>
-                            </label>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <a class="modal-footer-close" data-bs-dismiss="modal">Continue shopping</a>
-                        <button type="button" class="modal-footer-order">Order</button>
-                    </div>
-                </div>
+            <div class="modal-body">
             </div>
         </div>
     </div>
@@ -393,7 +341,7 @@
                     <img src="img/shop-icon.png" alt="shop icon">
                 </div>
             </a>
-            <div id="cart_counter_wrapper"><span id="shop-cart-count"> <a>0 </a></span></div>
+            <div id="cart_counter_wrapper"><span id="shop-cart-count"> 0 </span></div>
         </div>
     </div>
 </main>
@@ -470,8 +418,8 @@
 <script src="js/carousel-owl.js"></script>
 <script src="js/main-collection.js"></script>
 <script src="js/map.js"></script>
-<script src="js/product-list-MS.js"></script>
-<script src="js/product-service-MS.js"></script>
+<script src="js/product-list-ms.js"></script>
+<script src="js/product-service-ms.js"></script>
 <script src="js/shopping-cart.js"></script>
 <script src="js/product.js"></script>
 <!--<script src="js/new-arrival-collection.js"></script>-->
